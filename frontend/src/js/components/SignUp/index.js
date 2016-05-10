@@ -11,13 +11,10 @@ export default class SignUp extends Component {
             <Input label='Email' s={6} />
           </Row>
           <Row>
-            <Input type='password' label='Password' s={12} />
+            <Input type='password' label='Password' s={6} />
           </Row>
           <Row>
-            <Input type='date' label='Date of Birth' s={6} />
-          </Row>
-          <Row>
-            <Input label='Mobile Number' s={12} />
+            <Input label='Mobile Number' s={6} />
           </Row>
           <Row>
             <Input name='group1' type='checkbox' value='red' label={this.props.mobileText} />
