@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router'
+import { Link } from 'react-router'
 import { Col, Row, Button, Input } from 'react-materialize'
 
 export default class SignUp extends Component {
@@ -17,12 +17,12 @@ export default class SignUp extends Component {
             <Input label='Mobile Number' s={6} />
           </Row>
           <Row>
-            <Input name='group1' type='checkbox' value='red' label={this.props.mobileText} />
+            <Input name='group1' type='checkbox' value='mobileText' label={this.props.mobileText} />
           </Row>
           <Row>
-            <Input name='group1' type='checkbox' value='red' label={this.props.postcardText} />
+            <Input name='group1' type='checkbox' value='postcardText' label={this.props.postcardText} />
           </Row>
-          <Button className='submit-button' waves='light' large={true}>{this.props.buttonText}</Button>
+          <Link to={'/survivorgoals'}><Button className='submit-button' waves='light' large={true}>{this.props.buttonText}</Button></Link>
         </Col>
       </Row>
     )
