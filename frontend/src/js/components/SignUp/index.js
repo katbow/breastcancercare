@@ -19,6 +19,12 @@ export default class SignUp extends Component {
           <Row>
             <Input label='Mobile Number' s={12} />
           </Row>
+          <Row>
+            <Input name='group1' type='checkbox' value='red' label={this.props.mobileText} />
+          </Row>
+          <Row>
+            <Input name='group1' type='checkbox' value='red' label={this.props.postcardText} />
+          </Row>
           <Button className='submit-button' waves='light' large={false}>{this.props.buttonText}</Button>
         </Col>
       </Row>
