@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header/header_index.js'
 import Footer from './Footer/footer_index.js'
+import Goals from './Goals/index.js'
 
 import '../../scss/style.scss'
 
@@ -16,6 +17,7 @@ export default class App extends React.Component {
           logoUrl={options.logoUrl}
           fluid
         />
+        <Goals />
         <div className='header-spacing'></div>
           {this.props.children}
         <Footer logoUrl={options.logoUrl} />
