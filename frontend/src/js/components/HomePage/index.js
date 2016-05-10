@@ -7,9 +7,9 @@ export default class HomePage extends Component {
     return (
       <div>
         <h2>I am a Survivor</h2>
-        <Link to={'/contact'}><Button waves='light'>Sign Up</Button></Link>
+        <Link to={'/survivorsignup'}><Button waves='light'>Sign Up</Button></Link>
         <h2>I am a Supporter</h2>
-        <Link to={'/about'}><Button waves='light'>Sign Up</Button></Link>
+        <Link to={'/supportersignup'}><Button waves='light'>Sign Up</Button></Link>
       </div>
     )
   }
