@@ -1,9 +1,11 @@
 import React from 'react'
+import Aims from '../../components/Aims/'
 
-export default () => {
-  return (
-    <div className='aims'>
-      <h1>My Aims</h1>
-    </div>
-  )
+export default class AimsList extends React.Component () => {
+  render() {
+    return (
+      <Aims/>
+    ) 
+  }
 }
+

@@ -5,7 +5,7 @@ import App from './components/App.js'
 import Home from './views/Home/home_index.js'
 import About from './views/About/about_index.js'
 import Contact from './views/Contact/contact_index.js'
-import aimsList from './views/aimsList/aims_index.js'
+import AimsList from './views/aimsList/aims_index.js'
 
 export default (
   <Router history={browserHistory}>
@@ -13,7 +13,7 @@ export default (
       <IndexRoute component={Home} />
       <Route path='/about' component={About} />
       <Route path='/contact' component={Contact} />
-      <Route path='/aims' component={aimsList} />
+      <Route path='/aims' component={AimsList} />
     </Route>
   </Router>
 )
