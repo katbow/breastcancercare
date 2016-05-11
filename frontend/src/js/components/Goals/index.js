@@ -25,7 +25,7 @@ export default class Goals extends Component {
                             <img src='img/level2c.png' />
                             <img src='img/level3c.png' />
                           </div>
-                          <Input name='group1' type='checkbox' label='Not for me' />
+                          <Input name='group1' type='checkbox' label='Yes, Please!' />
                         </Col>
                       </div>
                     </Row>
@@ -52,7 +52,7 @@ export default class Goals extends Component {
                             <img src='img/level2c.png' />
                             <img src='img/level3c.png' />
                           </div>
-                          <Input name='group1' type='checkbox' label='Not for me' />
+                          <Input name='group1' type='checkbox' label='Yes, Please!' />
                         </Col>
                       </div>
                     </Row>
