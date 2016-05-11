@@ -120,6 +120,33 @@ a {
   }
 }
 
+.goal-container {
+  margin-top: 30px;
+  .card-panel {
+    padding: 10px;
+    display: flex;
+    label {
+      color: black;
+      font-size: 18px;
+    }
+    .level {
+      img {
+        width: 50px;
+        margin: 10px 10px 10px 0;
+      }
+    }
+    .goal {
+      margin-bottom: 15px;
+    }
+    .goal-img {
+      img {
+        width: 80%;
+        min-width: 200px;
+        margin-left: -25px;
+      }
+    }
+  }
+}
 
 // sign up Css
 

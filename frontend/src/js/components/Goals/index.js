@@ -1,24 +1,66 @@
 import React, { Component } from 'react'
-import { Row, Col, CardPanel, Button } from 'react-materialize'
+import { Row, Col, Input, Button } from 'react-materialize'
 import { Link } from 'react-router'
 
 export default class Goals extends Component {
-
 
   render () {
     return (
       <div>
         <Row>
-          <Col s={8} offset={'s2'} className='goals-container'>
-
-            {this.props.goals.map(goal => {
-              return (
-                <CardPanel className='teal lighten-4 black-text'>
-                  {goal}
-                </CardPanel>
-              )
-            })
-            }
+          <Col s={6}>
+            <Row>
+              <Col s={10} offset={'s1'} className='goal-container'>
+                {this.props.goals1.map(goal => {
+                  return (
+                    <Row>
+                      <div className='card-panel'>
+                        <Col s={4} className='goal-img'>
+                          <img src={goal[1]} />
+                        </Col>
+                        <Col s={7} offset={'s1'} className='goal'>
+                          <h5>{goal[0]}</h5>
+                          <div className='level'>
+                            <img src='img/level1c.png' />
+                            <img src='img/level2c.png' />
+                            <img src='img/level3c.png' />
+                          </div>
+                          <Input name='group1' type='checkbox' label='Not for me' />
+                        </Col>
+                      </div>
+                    </Row>
+                  )
+                })
+                }
+              </Col>
+            </Row>
+          </Col>
+          <Col s={6}>
+            <Row>
+              <Col s={10} offset={'s1'} className='goal-container'>
+                {this.props.goals2.map(goal => {
+                  return (
+                    <Row>
+                      <div className='card-panel'>
+                        <Col s={4} className='goal-img'>
+                          <img src={goal[1]} />
+                        </Col>
+                        <Col s={7} offset={'s1'} className='goal'>
+                          <h5>{goal[0]}</h5>
+                          <div className='level'>
+                            <img src='img/level1c.png' />
+                            <img src='img/level2c.png' />
+                            <img src='img/level3c.png' />
+                          </div>
+                          <Input name='group1' type='checkbox' label='Not for me' />
+                        </Col>
+                      </div>
+                    </Row>
+                  )
+                })
+                }
+              </Col>
+            </Row>
           </Col>
         </Row>
         <Row>
@@ -37,15 +79,13 @@ export default class Goals extends Component {
 }
 
 Goals.defaultProps = {
-  goals: [
-     'Mindfulness / Overcoming anxieties and concerns, practical & escapism',
-     'Fun stuff / Fun and frivolous, improving mood (watch out these don\'t alienate people of lower income)',
-     'Helpful hints for recovery (personalised to user by stated preferences/energy levels)',
-     'Normalisation cards - scientific evidence normalising their experience, and hints at dealing with that issue',
-     'User-generated',
-     'Measurement cards - helps us track the experience over time and tailor suggestion',
-     'Inspirational cards - simply positive, not asking anyone to do anything',
-     'Sponsored cards from partners'
+  goals1: [
+     [ 'Mindfulness', 'img/Mindfulness.png' ],
+     [ 'Fun and frivolous', 'img/Fun.png' ]
+  ],
+  goals2: [
+     [ 'Healthy Living', 'img/HealthyLiving.png' ],
+     [ 'Medical', 'img/Medical.png' ]
   ]
 }
 
