@@ -1,6 +1,6 @@
 import React from 'react'
-import { Row, Col, Card, CardTitle } from 'react-materialize'
-
+import { Row, Col, Card, CardTitle, Button } from 'react-materialize'
+import { Link } from 'react-router'
 
 class MotivationCard extends React.Component {
   constructor () {
@@ -57,6 +57,7 @@ class MotivationCard extends React.Component {
       >
         {this.questionBar()}
         <p>by {this.props.author}</p>
+        <Link to='/aims'><Button className='submit-button' waves='light'>Go to Favourites</Button></Link>
       </Card>
     )
   }
