@@ -23,6 +23,10 @@ export default class CardsList extends React.Component {
   changeCard () {
     const index = this.props.cards.indexOf(this.state.activecard)
     console.log(index)
+    console.log('THIS', this)
+    if (index === 2) {
+      this.props.history.pushState('/aims')
+    }
     this.setState({
       activecard: this.props.cards[index+1]
     })
