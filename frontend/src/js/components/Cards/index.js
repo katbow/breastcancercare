@@ -22,11 +22,6 @@ export default class CardsList extends React.Component {
   }
   changeCard () {
     const index = this.props.cards.indexOf(this.state.activecard)
-    console.log(index)
-    console.log('THIS', this)
-    if (index === 2) {
-      this.props.history.pushState('/aims')
-    }
     this.setState({
       activecard: this.props.cards[index+1]
     })
@@ -79,6 +74,14 @@ CardsList.defaultProps = {
       category: 'fun'
     },
     {
+      title: 'Download the "breathe to relax" app',
+      details: 'Breathe2Relax is a portable stress management tool which provides detailed information on the effects of stress on the body and instructions and practice exercises to help users learn the stress management skill called diaphragmatic breathing. Get it here: https://itunes.apple.com/gb/app/breathe2relax/id425720246?mt=8',
+      imgUrl: 'img/relax.jpg',
+      type: 'activity',
+      author: 'Kristina at Breast Cancer Care',
+      category: 'mindfulness'
+    },
+    {
       title: 'Create a playlist of songs that make you feel good',
       details: 'You could even dance along!',
       imgUrl: 'img/songlist.jpg',
@@ -127,14 +130,6 @@ CardsList.defaultProps = {
       category: 'mindfulness'
     },
     {
-      title: 'Download the "breathe to relax" app',
-      details: 'Breathe2Relax is a portable stress management tool which provides detailed information on the effects of stress on the body and instructions and practice exercises to help users learn the stress management skill called diaphragmatic breathing. Get it here: https://itunes.apple.com/gb/app/breathe2relax/id425720246?mt=8',
-      imgUrl: 'img/relax.jpg',
-      type: 'activity',
-      author: 'Kristina at Breast Cancer Care',
-      category: 'mindfulness'
-    },
-    {
       title: 'Learn about something new.',
       details: 'Is there something you always wanted to learn about but never had the time? Take the time today to read up on a topic you\'ve always been interested in. History of India? Anatomy of a Bee? How the internet works? If you need over to the random page on Wikipedia and learn about something completely new!',
       imgUrl: 'img/books.jpg',
@@ -149,41 +144,51 @@ CardsList.defaultProps = {
       type: 'activity',
       author: 'The Team at Breast Cancer Care',
       category: 'mindfulness'
-    },
-    {
-      title: 'Deliver a meal',
-      details: 'Make sure to ask in advance if they have any dietary restrictions or are following any guidelines. Stay for a visit, or just drop off the food if they’re not up for it (a cooler left outside the front door is perfect for this).',
-      imgUrl: 'img/meal.jpg',
-      type: 'support',
-      author: 'Aurore, breast-cancer survivor'
-    },
-    {
-      title: 'Send a quick email, text, or message saying you’re thinking of them',
-      details: '',
-      imgUrl: 'img/text.jpg',
-      type: 'support',
-      author: 'Megane, breast-cancer survivor'
-    },
-    {
-      title: 'Add “Feel free to take me up on this offer whenever” when you offer help',
-      details: 'That way they’ll know the offer will still be sincere whenever they need it (in a week, a month, a year).',
-      imgUrl: 'img/offer.jpg',
-      type: 'support',
-      author: 'Coralie, a Breast Cancer Care Nurse'
-    },
-    {
-      title: 'Go for a movie',
-      details: 'Offer to take them out to a movie. If they’re too tired, come by with a rental',
-      imgUrl: 'img/popcorn.jpg',
-      type: 'support',
-      author: 'Tristana, a Breast Cancer Care Nurse'
-    },
-    {
-      title: 'Offer to visit',
-      details: 'Check that they\’re feeling up for it',
-      imgUrl: 'img/visite.jpg',
-      type: 'support',
-      author: 'Justine, a Breast Cancer Care Nurse'
     }
   ]
 }
+
+// CardsList.defaultProps = {
+//   cards: [
+//     {
+//       title: 'Deliver a meal',
+//       details: 'Make sure to ask in advance if they have any dietary restrictions or are following any guidelines. Stay for a visit, or just drop off the food if they’re not up for it (a cooler left outside the front door is perfect for this).',
+//       imgUrl: 'img/meal.jpg',
+//       type: 'activity',
+//       author: 'Aurore, breast-cancer survivor'
+//       category: 'support'
+//     },
+//     {
+//       title: 'Send a quick email, text, or message saying you’re thinking of them',
+//       details: '',
+//       imgUrl: 'img/text.jpg',
+//       type: 'activity',
+//       author: 'Megane, breast-cancer survivor'
+//       category: 'support'
+//     },
+//     {
+//       title: 'Add “Feel free to take me up on this offer whenever” when you offer help',
+//       details: 'That way they’ll know the offer will still be sincere whenever they need it (in a week, a month, a year).',
+//       imgUrl: 'img/offer.jpg',
+//       type: 'activity',
+//       author: 'Coralie, a Breast Cancer Care Nurse'
+//       category: 'support'
+//     },
+//     {
+//       title: 'Go for a movie',
+//       details: 'Offer to take them out to a movie. If they’re too tired, come by with a rental',
+//       imgUrl: 'img/popcorn.jpg',
+//       type: 'activity',
+//       author: 'Tristana, a Breast Cancer Care Nurse'
+//       category: 'support'
+//     },
+//     {
+//       title: 'Offer to visit',
+//       details: 'Check that they\’re feeling up for it',
+//       imgUrl: 'img/visite.jpg',
+//       type: 'activity',
+//       author: 'Justine, a Breast Cancer Care Nurse'
+//       category: 'support'
+//     }
+//   ]
+// }
