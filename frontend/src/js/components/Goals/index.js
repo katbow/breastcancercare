@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Row, Col, CardPanel } from 'react-materialize'
+import { Row, Col, CardPanel, Button } from 'react-materialize'
+import { Link } from 'react-router'
 
 export default class Goals extends Component {
 
@@ -20,11 +21,12 @@ export default class Goals extends Component {
             }
           </Col>
         </Row>
+        <Link to={'/cards'}><Button className='submit-button' waves='light' large={true}>Skip Step</Button></Link>
+        <Link to={'/cards'}><Button className='submit-button' waves='light' large={true}>Complete</Button></Link>
       </div>
     )
   }
 }
-
 
 Goals.defaultProps = {
   goals: [
