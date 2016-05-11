@@ -12,6 +12,10 @@ body {
   background-color: $background-color;
 }
 
+.col {
+  padding: 0 !important;
+}
+
 .about h3 {
   text-align: center;
   margin: 2em;
@@ -28,6 +32,23 @@ body {
 
   img {
     width: 100%;
+  }
+}
+
+.delete-btn {
+  float: right;
+  width: 70px;
+  height: 30px;
+  padding: 0;
+  font-size: 12px;
+  margin-top: -5px;
+  background-color: #F29100;
+  &:hover, &:focus {
+    background-color: #7A004D;
+  }
+  span {
+    margin-top: -3px;
+    display: block;
   }
 }
 
