@@ -1,5 +1,5 @@
 import React from 'react'
-import { browserHistory, Router, Route, IndexRoute } from 'react-router'
+import { Router, browserHistory, Route, IndexRoute } from 'react-router'
 
 import App from './components/App.js'
 import Home from './views/Home/home_index.js'

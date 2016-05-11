@@ -1,6 +1,4 @@
 import React from 'react'
-import { Row, Col } from 'react-materialize'
-import Cards from '../../components/Cards/'
 
 import HomePage from '../../components/HomePage/'
 

@@ -6,9 +6,29 @@ html {
   min-height: 100%;
 }
 
+label {
+  color: white;
+}
+
+.input-field label {
+  color: white;
+}
+
+.btn {
+  background-color: #F7931D;
+  padding: 0px 75px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.homepage {
+  color: white;
+}
+
 body {
   font-family: $main-font;
   margin-bottom: $footer-height;
+  background-color: #ED1E91;
 }
 
 .about h3 {
