@@ -92,18 +92,46 @@ CardsList.defaultProps = {
       author: 'Lee, breast-cancer survivor'
     },
     {
-      title: 'it\'s normal for your body to change',
-      details: 'As body shape changes what we feel comfortable wearing changes.  Give yourself some time to explore your wardrobe and discard items that no longer help you to feel good. (Anna)',
-      imgUrl: 'img/body-1.jpg',
-      type: 'normalisation',
-      author: 'Sally, breast-cancer survivor'
-    },
-    {
       title: 'call an old friend',
       details: 'Calling an old friend will ...',
       imgUrl: 'img/body-1.jpg',
       type: 'activity',
       author: 'Anna, a Breast Cancer Care Nurse'
+    },
+    {
+      title: 'Deliver a meal',
+      details: 'Make sure to ask in advance if they have any dietary restrictions or are following any guidelines. Stay for a visit, or just drop off the food if they’re not up for it (a cooler left outside the front door is perfect for this).',
+      imgUrl: 'img/meal.jpg',
+      type: 'support',
+      author: 'Aurore, breast-cancer survivor'
+    },
+    {
+      title: 'Send a quick email, text, or message saying you’re thinking of them',
+      details: '',
+      imgUrl: 'img/text.jpg',
+      type: 'support',
+      author: 'Megane, breast-cancer survivor'
+    },
+    {
+      title: 'Add “Feel free to take me up on this offer whenever” when you offer help',
+      details: 'That way they’ll know the offer will still be sincere whenever they need it (in a week, a month, a year).',
+      imgUrl: 'img/offer.jpg',
+      type: 'support',
+      author: 'Coralie, a Breast Cancer Care Nurse'
+    },
+    {
+      title: 'Go for a movie',
+      details: 'Offer to take them out to a movie. If they’re too tired, come by with a rental',
+      imgUrl: 'img/popcorn.jpg',
+      type: 'support',
+      author: 'Tristana, a Breast Cancer Care Nurse'
+    },
+    {
+      title: 'Offer to visit',
+      details: 'Check that they\’re feeling up for it',
+      imgUrl: 'img/visite.jpg',
+      type: 'support',
+      author: 'Justine, a Breast Cancer Care Nurse'
     }
   ]
 }
