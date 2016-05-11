@@ -127,7 +127,7 @@ CardsList.defaultProps = {
       author: 'Tristana, a Breast Cancer Care Nurse'
     },
     {
-      title: 'Offer to visit'
+      title: 'Offer to visit',
       details: 'Check that they\’re feeling up for it',
       imgUrl: 'img/visite.jpg',
       type: 'support',

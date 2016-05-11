@@ -61,14 +61,19 @@ export default class Goals extends Component {
                 }
               </Col>
             </Row>
+
           </Col>
         </Row>
-        <Link to={'/cards'}>
-          <Button className='submit-button' waves='light' large={true}>Skip Step</Button>
-        </Link>
-        <Link to={'/cards'}>
-            <Button className='submit-button' waves='light' large={true}>Complete</Button>
-        </Link>
+        <Row>
+          <Col offset='s4' s={8}>
+            <Link to={'/cards'}><Button className='submit-button' waves='light' large={true}>Skip Step</Button></Link>
+          </Col>
+        </Row>
+        <Row>
+          <Col offset='s4' s={8}>
+            <Link to={'/cards'}><Button className='submit-button' waves='light' large={true}>Complete</Button></Link>
+          </Col>
+        </Row>
       </div>
     )
   }

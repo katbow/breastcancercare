@@ -119,3 +119,44 @@ a {
     width: 10%;
   }
 }
+
+.goal-container {
+  margin-top: 30px;
+  .card-panel {
+    padding: 10px;
+    display: flex;
+    label {
+      color: black;
+      font-size: 18px;
+    }
+    .level {
+      img {
+        width: 50px;
+        margin: 10px 10px 10px 0;
+      }
+    }
+    .goal {
+      margin-bottom: 15px;
+    }
+    .goal-img {
+      img {
+        width: 80%;
+        min-width: 200px;
+        margin-left: -25px;
+      }
+    }
+  }
+}
+
+// sign up Css
+
+.collapsible-header {
+    display: block;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #F7931D;
+    border-bottom: 1px solid #F7931D;
+    color: white;
+}
