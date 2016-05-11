@@ -7,7 +7,7 @@ import SurvivorSignup from './views/SurvivorSignup/survivorsignup_index.js'
 import SupporterSignup from './views/SupporterSignup/supportersignup_index.js'
 import SurvivorGoals from './views/Goals/goals_index.js'
 import CardsPage from './views/Cards/cards_index.js'
-import Aims from './views/AimsList/aims_index.js'
+import AimsList from './views/aimsList/aims_index.js'
 
 export default (
   <Router history={browserHistory}>
@@ -17,7 +17,7 @@ export default (
       <Route path='/supportersignup' component={SupporterSignup} />
       <Route path='/survivorgoals' component={SurvivorGoals} />
       <Route path='/cards' component={CardsPage} />
-      <Route path='/aims' component={Aims} />
+      <Route path='/aims' component={AimsList} />
     </Route>
   </Router>
 )
