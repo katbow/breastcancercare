@@ -22,11 +22,6 @@ export default class CardsList extends React.Component {
   }
   changeCard () {
     const index = this.props.cards.indexOf(this.state.activecard)
-    console.log(index)
-    console.log('THIS', this)
-    if (index === 2) {
-      this.props.history.pushState('/aims')
-    }
     this.setState({
       activecard: this.props.cards[index+1]
     })
@@ -71,39 +66,60 @@ export default class CardsList extends React.Component {
 CardsList.defaultProps = {
   cards: [
     {
-      title: 'Do some light exercise',
-      details: 'daily exercise will lighten the mood',
-      imgUrl: 'img/walking-1.jpg',
+      title: 'Wear something that makes you feel good',
+      details: 'Dressing up can feel great! Put on something fancy or a bit different and it could give you a boost.',
+      imgUrl: 'https://unsplash.com/photos/zv-3GbTGnzc',
       type: 'activity',
-      author: 'Deidre, Breast Cancer Care Nurse'
+      author: 'Deidre, Breast Cancer Care Nurse',
+      category: 'fun'
     },
     {
-      title: 'Find a different recipe to cook',
-      details: 'food is one of the chief joys of life. find some new flavours',
-      imgUrl: 'img/cooking-1.jpg',
+      title: 'Create a playlist of songs that make you feel good',
+      details: 'You could even dance along!',
+      imgUrl: 'https://unsplash.com/photos/7_Bau1vYR8I',
       type: 'activity',
-      author: 'Deidre, Breast Cancer Care Nurse'
+      author: 'Kristina at Breast Cancer Care',
+      category: 'fun'
     },
     {
-      title: 'it\'s normal for your body to change',
-      details: 'As body shape changes what we feel comfortable wearing changes.  Give yourself some time to explore your wardrobe and discard items that no longer help you to feel good. (Anna)',
-      imgUrl: 'img/body-1.jpg',
-      type: 'normalisation',
-      author: 'Lee, breast-cancer survivor'
-    },
-    {
-      title: 'it\'s normal for your body to change',
-      details: 'As body shape changes what we feel comfortable wearing changes.  Give yourself some time to explore your wardrobe and discard items that no longer help you to feel good. (Anna)',
-      imgUrl: 'img/body-1.jpg',
-      type: 'normalisation',
-      author: 'Sally, breast-cancer survivor'
-    },
-    {
-      title: 'call an old friend',
-      details: 'Calling an old friend will ...',
-      imgUrl: 'img/body-1.jpg',
+      title: 'Make a facemask from scratch ',
+      details: 'Feels even better when you use it knowing you made it!',
+      imgUrl: 'http://www.marieclaire.com/beauty/how-to/a2830/best-homemade-face-masks/?zoomable',
       type: 'activity',
-      author: 'Anna, a Breast Cancer Care Nurse'
-    }
+      author: 'Marie Claire',
+      category: 'fun'
+    },
+    {
+      title: 'Buy or do something nice for someone else ',
+      details: 'Helping other people feel good helps you feel good too.',
+      imgUrl: 'https://unsplash.com/photos/7pGehyH7o64',
+      type: 'activity',
+      author: 'Kath at Breast Cancer Care',
+      category: 'fun'
+    },
+    {
+      title: 'Have coffee with a friend',
+      details: 'You can even go for a fancy coffee to really spice it up.',
+      imgUrl: 'https://unsplash.com/photos/4qJdtfJ2MmQ',
+      type: 'activity',
+      author: 'Anna, a Breast Cancer Survivor',
+      category: 'fun'
+    },
+    {
+      title: 'Get your pencils out and spend some time colouring in.  ',
+      details: 'Adult colouring books are a fantastic way to help your brain switch off while you focus on making beautiful images. Your local stationer should have some colouring books/magazines or print one from the internet - we love this one by blogger Valentina. ',
+      imgUrl: 'https://farm4.staticflickr.com/3178/3111390259_fd8633e9ec_o_d.jpg',
+      type: 'activity',
+      author: 'The Team at Breast Cancer Care',
+      category: 'mindfulness'
+    },
+    {
+      title: 'Get your pencils out and spend some time colouring in.  ',
+      details: 'Adult colouring books are a fantastic way to help your brain switch off while you focus on making beautiful images. Your local stationer should have some colouring books/magazines or print one from the internet - we love this one by blogger Valentina. ',
+      imgUrl: 'https://farm4.staticflickr.com/3178/3111390259_fd8633e9ec_o_d.jpg',
+      type: 'activity',
+      author: 'The Team at Breast Cancer Care',
+      category: 'mindfulness'
+    },
   ]
 }
