@@ -61,6 +61,7 @@ export default class Goals extends Component {
                 }
               </Col>
             </Row>
+
           </Col>
         </Row>
         <Row>
