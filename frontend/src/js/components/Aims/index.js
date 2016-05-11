@@ -4,7 +4,7 @@ import {Tabs, Tab, Collection, CollectionItem, Input, Button} from 'react-materi
 export default class Aims extends React.Component {
 
   constructor () {
-    super ()
+    super()
     this.state = {
       current: [],
       removed: [],
@@ -15,11 +15,9 @@ export default class Aims extends React.Component {
     // delete the current aim from the current state
     const index = this.state.current.indexOf(activity)
     const firstHalf = this.state.current.slice(0, index)
-    const secondHalf = this.state.current.slice(index+1)
+    const secondHalf = this.state.current.slice(index + 1)
     const newArray = [].concat(firstHalf, secondHalf)
-    console.log ('frist', firstHalf, 'second', secondHalf, 'newarray', newArray)
     const removed = this.state.removed
-    console.log(this.state.current)
 
     removed.push(activity)
     console.log('remove2', removed)
@@ -45,10 +43,9 @@ export default class Aims extends React.Component {
     console.log(this.state)
   }
   check (activity) {
-
     const index = this.state.current.indexOf(activity)
     const firstHalf = this.state.current.slice(0, index)
-    const secondHalf = this.state.current.slice(index+1)
+    const secondHalf = this.state.current.slice(index + 1)
     const newArray = [].concat(firstHalf, secondHalf)
     const checked = this.state.checked
 
@@ -59,11 +56,10 @@ export default class Aims extends React.Component {
     })
   }
 
-    undo (activity) {
-
+  undo (activity) {
     const index = this.state.removed.indexOf(activity)
     const firstHalf = this.state.removed.slice(0, index)
-    const secondHalf = this.state.removed.slice(index+1)
+    const secondHalf = this.state.removed.slice(index + 1)
     const newArray = [].concat(firstHalf, secondHalf)
     const current = this.state.current
 
@@ -123,10 +119,10 @@ export default class Aims extends React.Component {
 
 Aims.defaultProps = {
   current: [
-  'Plant some flowers in your garden',
-  'Go for a walk with your dog',
-  'Read a new book',
-  'Listen some new music'
+    'Plant some flowers in your garden',
+    'Go for a walk with your dog',
+    'Read a new book',
+    'Listen some new music'
 
   ],
   removed: [
@@ -135,10 +131,10 @@ Aims.defaultProps = {
 
   ],
   checked: [
-  'Learn a new thing',
-  'Have a coffee with your best friend',
-  'Write a new article',
-  'Do some photograpy'
+    'Learn a new thing',
+    'Have a coffee with your best friend',
+    'Write a new article',
+    'Do some photograpy'
   ]
 }
 

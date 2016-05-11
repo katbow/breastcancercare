@@ -1,28 +1,41 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router'
-import { Col, Row, Button, Input } from 'react-materialize'
+import { Link } from 'react-router'
+import { Col, Row, Button, Input, Collapsible, CollapsibleItem } from 'react-materialize'
 
 export default class SignUp extends Component {
-  render() {
+  render () {
     return (
-      <Row className='formContainer'>
-        <Col s={10} m={8} l={6} offset='s1 m2 l3'>
+      <Row>
+        <Col s={8} m={6} l={4} offset='s2 m3 l4'>
           <Row>
-            <Input label='Email' s={6} />
+            <Input label='Email' s={12} />
           </Row>
           <Row>
-            <Input type='password' label='Password' s={6} />
+            <Input type='password' label='Password' s={12} />
           </Row>
           <Row>
-            <Input label='Mobile Number' s={6} />
+            <Collapsible popout>
+              <CollapsibleItem header='Apply for text notifications' icon='phone'>
+                <Input label='Mobile Number' s={12} />
+              </CollapsibleItem>
+            </Collapsible>
           </Row>
           <Row>
-            <Input name='group1' type='checkbox' value='red' label={this.props.mobileText} />
+            <Collapsible popout>
+              <CollapsibleItem header='Apply for post cards' icon='place'>
+                <Input label='House Number' s={12} />
+                <Input label='Street Name' s={12} />
+                <Input label='Post Code' s={12} />
+                <Input label='City' s={12} />
+                <Input label='Country' s={12} />
+              </CollapsibleItem>
+            </Collapsible>
           </Row>
           <Row>
-            <Input name='group1' type='checkbox' value='red' label={this.props.postcardText} />
+            <Col offset='s3' s={6}>
+              <Link to={'/survivorgoals'}><Button className='submit-button' waves='light' large={true}>{this.props.buttonText}</Button></Link>
+            </Col>
           </Row>
-          <Button className='submit-button' waves='light' large={false}>{this.props.buttonText}</Button>
         </Col>
       </Row>
     )
