@@ -11,7 +11,7 @@ import AimsList from './views/aimsList/aims_index.js'
 
 export default (
   <Router history={browserHistory}>
-    <Route path='/' component={App}>
+    <Route path='/breastcancercare' component={App}>
       <IndexRoute component={Home} />
       <Route path='/survivorsignup' component={SurvivorSignup} />
       <Route path='/supportersignup' component={SupporterSignup} />
